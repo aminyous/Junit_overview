@@ -36,6 +36,17 @@ class DemoUtilsTest {
     }
 
     @Test
+    @Order(2)
+        // @DisplayName("Equals and Not Equals")
+    void testMultiplication(){
+
+        //System.out.println("Running test : testEqualsAndNotEquals");
+
+        assertEquals(6, demoUtils.multiply(2, 3), "2*4 must be 6");
+        assertNotEquals(6, demoUtils.add(1, 9),"1*9 must not be 6");
+    }
+
+    @Test
     // @DisplayName("Null and Not Null")
     @Order(3)
     void testNullAndNotNull(){
@@ -57,6 +68,7 @@ class DemoUtilsTest {
         assertNotSame(str1, demoUtils.getAcademy(), "Objects should not refer to same object");
     }
     @Test
+    @Order(1)
     void testTrueFalse(){
         int gradeOne = 10;
         int gradeTwo = 5;
