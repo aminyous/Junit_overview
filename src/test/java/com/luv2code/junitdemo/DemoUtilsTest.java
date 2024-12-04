@@ -42,12 +42,12 @@ class DemoUtilsTest {
 
         //System.out.println("Running test : testEqualsAndNotEquals");
 
-        assertEquals(6, demoUtils.multiply(2, 3), "2*4 must be 6");
+        assertEquals(6, demoUtils.multiply(2, 3), "2*3 must be 6");
         assertNotEquals(6, demoUtils.add(1, 9),"1*9 must not be 6");
     }
 
     @Test
-    // @DisplayName("Null and Not Null")
+    @DisplayName("Null and Not Null")
     @Order(3)
     void testNullAndNotNull(){
 
